@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Project_Kisra\\PMUC\\zoom-sdk-android-5.7.1.1268\\zoom-sdk-android-5.7.1.1268\\mobilertc-android-studio\\sample\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v29\\values-night-v29.xml",
+            "map": [
+                {
+                    "source": "D:\\Project_Kisra\\PMUC\\zoom-sdk-android-5.7.1.1268\\zoom-sdk-android-5.7.1.1268\\mobilertc-android-studio\\commonlib\\build\\.transforms\\ca1b85f025b2eba4ccd4c6b69e39e3ee\\jetified-commonlib\\res\\values-night-v29\\values-night-v29.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "277"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,585 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="us.zoom.sdkexample"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="30" />
+10-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml
+11
+12    <uses-feature android:glEsVersion="0x00020000" />
+12-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:8:5-54
+12-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:8:19-51
+13    <uses-feature
+13-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:13:5-15:36
+14        android:name="android.hardware.camera"
+14-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:14:9-47
+15        android:required="false" />
+15-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:15:9-33
+16    <uses-feature
+16-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:16:5-18:36
+17        android:name="android.hardware.camera.autofocus"
+17-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:17:9-57
+18        android:required="false" />
+18-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:18:9-33
+19    <uses-feature
+19-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:19:5-21:36
+20        android:name="android.hardware.telephony"
+20-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:20:9-50
+21        android:required="false" />
+21-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:21:9-33
+22    <uses-feature
+22-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:22:5-24:36
+23        android:name="android.hardware.bluetooth"
+23-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:23:9-50
+24        android:required="false" />
+24-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:24:9-33
+25    <uses-feature
+25-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:25:5-27:36
+26        android:name="android.hardware.microphone"
+26-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:26:9-51
+27        android:required="false" />
+27-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:27:9-33
+28
+29    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+29-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:29:5-81
+29-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:29:22-78
+30    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+30-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:30:5-80
+30-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:30:22-77
+31    <uses-permission android:name="android.permission.INTERNET" />
+31-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:31:5-67
+31-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:31:22-64
+32    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+32-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:32:5-75
+32-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:32:22-72
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:33:5-79
+33-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:33:22-76
+34    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+34-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:34:5-76
+34-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:34:22-73
+35    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+35-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:35:5-80
+35-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:35:22-77
+36    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+36-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:36:5-71
+36-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:36:22-68
+37    <uses-permission android:name="android.permission.CAMERA" />
+37-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:37:5-65
+37-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:37:22-62
+38    <uses-permission android:name="android.permission.BLUETOOTH" />
+38-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:38:5-68
+38-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:38:22-65
+39    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+39-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:39:5-74
+39-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:39:22-71
+40    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+40-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:40:5-75
+40-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:40:22-72
+41    <uses-permission android:name="android.permission.WAKE_LOCK" />
+41-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:41:5-68
+41-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:41:22-65
+42    <uses-permission android:name="android.permission.CALL_PHONE" />
+42-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:42:5-69
+42-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:42:22-66
+43    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+43-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:43:5-78
+43-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:43:22-75
+44    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+44-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:44:5-77
+44-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:44:22-74
+45    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+45-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:45:5-81
+45-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:45:22-78
+46    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+46-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:46:5-85
+46-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:46:22-82
+47
+48    <application
+48-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:10:5-167:19
+49        android:name="androidx.multidex.MultiDexApplication"
+49-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:11:9-61
+50        android:allowBackup="false"
+50-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:12:9-36
+51        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+51-->[androidx.core:core:1.5.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\a8789f23a6e9adb0440bd271c485ef0c\core-1.5.0\AndroidManifest.xml:24:18-86
+52        android:debuggable="true"
+53        android:hardwareAccelerated="true"
+53-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:13:9-43
+54        android:icon="@drawable/ic_launcher"
+54-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:14:9-45
+55        android:label="@string/this_app_name"
+55-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:15:9-46
+56        android:screenOrientation="landscape"
+56-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:16:9-46
+57        android:testOnly="true" >
+58        <activity
+58-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:17:9-27:20
+59            android:name="us.zoom.sdksample.ui.DeviceActivity"
+59-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:17:19-52
+60            android:icon="@drawable/ic_launcher"
+60-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:18:13-49
+61            android:label="@string/this_app_name"
+61-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:19:13-50
+62            android:screenOrientation="landscape"
+62-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:20:13-50
+63            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+63-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:21:13-72
+64            <intent-filter>
+64-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:22:13-26:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:17-69
+65-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:25-66
+66
+67                <category android:name="android.intent.category.DEFAULT" />
+67-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:17-76
+67-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:27-73
+68            </intent-filter>
+69        </activity>
+70        <activity
+70-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:28:9-39:20
+71            android:name="us.zoom.sdksample.ui.ParticipantsActivity"
+71-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:29:13-52
+72            android:icon="@drawable/ic_launcher"
+72-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:30:13-49
+73            android:label="@string/this_app_name"
+73-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:31:13-50
+74            android:screenOrientation="landscape"
+74-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:32:13-50
+75            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" >
+75-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:33:13-72
+76            <intent-filter>
+76-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:22:13-26:29
+77                <action android:name="android.intent.action.MAIN" />
+77-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:17-69
+77-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:25-66
+78
+79                <category android:name="android.intent.category.DEFAULT" />
+79-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:17-76
+79-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:27-73
+80            </intent-filter>
+81        </activity>
+82        <activity
+82-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:40:9-52:20
+83            android:name="us.zoom.sdksample.ui.InitAuthSDKActivity"
+83-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:41:13-51
+84            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+84-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:42:13-83
+85            android:icon="@drawable/ic_launcher"
+85-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:43:13-49
+86            android:label="@string/this_app_name"
+86-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:44:13-50
+87            android:screenOrientation="landscape"
+87-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:45:13-50
+88            android:theme="@style/ZMTheme.MainWindow" >
+88-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:46:13-54
+89            <intent-filter>
+89-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:47:13-51:29
+90                <action android:name="android.intent.action.MAIN" />
+90-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:17-69
+90-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:25-66
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:50:17-77
+92-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:50:27-74
+93            </intent-filter>
+94        </activity>
+95        <activity
+95-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:53:9-63:20
+96            android:name="us.zoom.sdksample.ui.APIUserStartJoinMeetingActivity"
+96-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:54:13-63
+97            android:icon="@drawable/ic_launcher"
+97-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:55:13-49
+98            android:label="@string/this_app_name"
+98-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:56:13-50
+99            android:theme="@style/ZMTheme.MainWindow" >
+99-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:57:13-54
+100            <intent-filter>
+100-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:22:13-26:29
+101                <action android:name="android.intent.action.MAIN" />
+101-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:17-69
+101-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:25-66
+102
+103                <category android:name="android.intent.category.DEFAULT" />
+103-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:17-76
+103-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:27-73
+104            </intent-filter>
+105        </activity>
+106        <activity
+106-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:64:9-75:20
+107            android:name="us.zoom.sdksample.ui.LoginUserStartJoinMeetingActivity"
+107-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:65:13-65
+108            android:icon="@drawable/ic_launcher"
+108-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:66:13-49
+109            android:label="@string/this_app_name"
+109-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:67:13-50
+110            android:screenOrientation="landscape"
+110-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:68:13-50
+111            android:theme="@style/ZMTheme.MainWindow" >
+111-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:69:13-54
+112            <intent-filter>
+112-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:22:13-26:29
+113                <action android:name="android.intent.action.MAIN" />
+113-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:17-69
+113-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:25-66
+114
+115                <category android:name="android.intent.category.DEFAULT" />
+115-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:17-76
+115-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:27-73
+116            </intent-filter>
+117        </activity>
+118        <activity
+118-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:76:9-87:20
+119            android:name="us.zoom.sdksample.ui.EmailUserLoginActivity"
+119-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:77:13-54
+120            android:icon="@drawable/ic_launcher"
+120-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:78:13-49
+121            android:label="@string/this_app_name"
+121-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:79:13-50
+122            android:screenOrientation="landscape"
+122-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:80:13-50
+123            android:theme="@style/ZMTheme.MainWindow" >
+123-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:81:13-54
+124            <intent-filter>
+124-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:22:13-26:29
+125                <action android:name="android.intent.action.MAIN" />
+125-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:17-69
+125-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:25-66
+126
+127                <category android:name="android.intent.category.DEFAULT" />
+127-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:17-76
+127-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:27-73
+128            </intent-filter>
+129        </activity>
+130        <activity
+130-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:88:9-99:20
+131            android:name="us.zoom.sdksample.ui.SSOUserLoginActivity"
+131-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:89:13-52
+132            android:icon="@drawable/ic_launcher"
+132-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:90:13-49
+133            android:label="@string/this_app_name"
+133-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:91:13-50
+134            android:screenOrientation="portrait"
+134-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:92:13-49
+135            android:theme="@style/ZMTheme.MainWindow" >
+135-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:93:13-54
+136            <intent-filter>
+136-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:22:13-26:29
+137                <action android:name="android.intent.action.MAIN" />
+137-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:17-69
+137-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:25-66
+138
+139                <category android:name="android.intent.category.DEFAULT" />
+139-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:17-76
+139-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:27-73
+140            </intent-filter>
+141        </activity>
+142        <activity
+142-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:100:9-111:20
+143            android:name="us.zoom.sdksample.otherfeatures.MyInviteActivity"
+143-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:101:13-59
+144            android:icon="@drawable/ic_launcher"
+144-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:102:13-49
+145            android:label="Share Meeting"
+145-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:103:13-42
+146            android:screenOrientation="landscape"
+146-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:104:13-50
+147            android:theme="@style/ZMTheme.MainWindow" >
+147-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:105:13-54
+148            <intent-filter>
+148-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:106:13-110:29
+149                <action android:name="us.zoom.sdkexample.intent.action.MeetingInvite" />
+149-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:107:17-89
+149-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:107:25-86
+150
+151                <category android:name="android.intent.category.DEFAULT" />
+151-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:17-76
+151-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:27-73
+152            </intent-filter>
+153        </activity>
+154        <activity
+154-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:112:9-123:20
+155            android:name="us.zoom.sdksample.otherfeatures.MyWaitJoinActivity"
+155-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:113:13-61
+156            android:icon="@drawable/ic_launcher"
+156-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:114:13-49
+157            android:theme="@style/ZMTheme.MainWindow" >
+157-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:115:13-54
+158
+159            <!--
+160                <intent-filter>
+161                <action android:name="us.zoom.sdkexample.intent.action.JoinBeforeHost" />
+162                <category android:name="android.intent.category.DEFAULT" />
+163            </intent-filter>
+164            -->
+165        </activity>
+166        <activity
+166-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:124:9-135:20
+167            android:name="us.zoom.sdksample.otherfeatures.MyCallMeByPhoneActivity"
+167-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:125:13-66
+168            android:icon="@drawable/ic_launcher"
+168-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:126:13-49
+169            android:theme="@style/ZMTheme.MainWindow" >
+169-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:127:13-54
+170
+171            <!--
+172                <intent-filter>
+173                <action android:name="us.zoom.sdkexample.intent.action.CallMyPhone" />
+174                <category android:name="android.intent.category.DEFAULT" />
+175            </intent-filter>
+176            -->
+177        </activity>
+178        <activity
+178-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:136:9-140:56
+179            android:name="us.zoom.sdksample.inmeetingfunction.customizedmeetingui.MyMeetingActivity"
+179-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:137:13-84
+180            android:configChanges="screenSize"
+180-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:138:13-47
+181            android:screenOrientation="portrait"
+181-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:139:13-49
+182            android:theme="@style/ZMTheme.SubWindow" />
+182-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:140:13-53
+183        <activity
+183-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:141:9-145:56
+184            android:name="us.zoom.sdksample.ui.MeetingSettingActivity"
+184-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:142:13-54
+185            android:configChanges="screenSize"
+185-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:143:13-47
+186            android:screenOrientation="portrait"
+186-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:144:13-49
+187            android:theme="@style/ZMTheme.SubWindow" />
+187-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:145:13-53
+188        <activity
+188-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:146:9-150:56
+189            android:name="us.zoom.sdksample.inmeetingfunction.customizedmeetingui.RawDataMeetingActivity"
+189-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:147:13-89
+190            android:configChanges="screenSize|orientation|keyboardHidden|keyboard"
+190-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:148:13-83
+191            android:screenOrientation="portrait"
+191-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:149:13-49
+192            android:theme="@style/ZMTheme.SubWindow" />
+192-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:150:13-53
+193        <activity android:name="us.zoom.sdksample.ui.QAActivity" />
+193-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:151:9-51
+193-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:151:19-48
+194        <activity
+194-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:152:9-156:56
+195            android:name="us.zoom.sdksample.ui.BreakoutRoomsAdminActivity"
+195-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:153:13-58
+196            android:configChanges="screenSize"
+196-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:154:13-47
+197            android:screenOrientation="portrait"
+197-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:155:13-49
+198            android:theme="@style/ZMTheme.SubWindow" />
+198-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:156:13-53
+199        <activity
+199-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:157:9-161:56
+200            android:name="us.zoom.sdksample.ui.BoEditActivity"
+200-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:158:13-46
+201            android:configChanges="screenSize"
+201-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:159:13-47
+202            android:screenOrientation="portrait"
+202-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:160:13-49
+203            android:theme="@style/ZMTheme.SubWindow" />
+203-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:161:13-53
+204        <activity
+204-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:162:9-166:56
+205            android:name="us.zoom.sdksample.inmeetingfunction.zoommeetingui.CustomZoomUIActivity"
+205-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:163:13-81
+206            android:configChanges="orientation|screenSize"
+206-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:164:13-59
+207            android:hardwareAccelerated="true"
+207-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:165:13-47
+208            android:theme="@style/ZMTheme.SubWindow" />
+208-->D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:166:13-53
+209        <activity
+209-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:49:9-52:58
+210            android:name="us.zoom.internal.helper.PrivacyDisclaimerActivity"
+210-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:50:13-77
+211            android:screenOrientation="portrait"
+211-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:51:13-49
+212            android:theme="@style/ZMTheme.Transparent" />
+212-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:52:13-55
+213        <activity
+213-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:53:9-57:58
+214            android:name="com.zipow.videobox.JoinByURLActivity"
+214-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:54:13-64
+215            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+215-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:55:13-139
+216            android:launchMode="singleTask"
+216-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:56:13-44
+217            android:theme="@style/ZMTheme.Transparent" />
+217-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:57:13-55
+218        <activity
+218-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:58:9-63:58
+219            android:name="com.zipow.videobox.IntegrationActivity"
+219-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:59:13-66
+220            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+220-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:60:13-129
+221            android:excludeFromRecents="true"
+221-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:61:13-46
+222            android:launchMode="singleTask"
+222-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:62:13-44
+223            android:theme="@style/ZMTheme.Transparent" />
+223-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:63:13-55
+224        <activity
+224-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:64:9-68:59
+225            android:name="com.zipow.videobox.MeetingEndMessageActivity"
+225-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:65:13-72
+226            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+226-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:66:13-129
+227            android:launchMode="singleTask"
+227-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:67:13-44
+228            android:theme="@style/ZMDialog.Transparent" />
+228-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:68:13-56
+229        <activity
+229-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:69:9-73:59
+230            android:name="com.zipow.videobox.JoinMeetingFailActivity"
+230-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:70:13-70
+231            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+231-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:71:13-129
+232            android:launchMode="singleTask"
+232-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:72:13-44
+233            android:theme="@style/ZMDialog.Transparent" />
+233-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:73:13-56
+234        <activity
+234-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:74:9-78:56
+235            android:name="com.zipow.videobox.ConfActivityNormal"
+235-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:75:13-65
+236            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+236-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:76:13-129
+237            android:hardwareAccelerated="true"
+237-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:77:13-47
+238            android:theme="@style/ZMTheme.SubWindow" />
+238-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:78:13-53
+239        <activity
+239-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:79:9-83:56
+240            android:name="com.zipow.videobox.PListActivity"
+240-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:80:13-60
+241            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode"
+241-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:81:13-129
+242            android:hardwareAccelerated="true"
+242-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:82:13-47
+243            android:theme="@style/ZMTheme.SubWindow" />
+243-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:83:13-53
+244        <activity
+244-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:84:9-88:56
+245            android:name="com.zipow.videobox.InMeetingSettingsActivity"
+245-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:85:13-72
+246            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+246-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:86:13-139
+247            android:hardwareAccelerated="true"
+247-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:87:13-47
+248            android:theme="@style/ZMTheme.SubWindow" />
+248-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:88:13-53
+249        <activity
+249-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:89:9-92:56
+250            android:name="com.zipow.videobox.CallInActivity"
+250-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:90:13-61
+251            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+251-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:91:13-139
+252            android:theme="@style/ZMTheme.SubWindow" />
+252-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:92:13-53
+253        <activity
+253-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:93:9-97:70
+254            android:name="com.zipow.videobox.SimpleActivity"
+254-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:94:13-61
+255            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+255-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:95:13-139
+256            android:theme="@style/ZMTheme.SubWindow"
+256-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:96:13-53
+257            android:windowSoftInputMode="stateHidden|adjustResize" />
+257-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:97:13-67
+258        <activity
+258-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:98:9-102:70
+259            android:name="com.zipow.videobox.SimpleInMeetingActivity"
+259-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:99:13-70
+260            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+260-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:100:13-139
+261            android:theme="@style/ZMTheme.SubWindow"
+261-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:101:13-53
+262            android:windowSoftInputMode="stateHidden|adjustResize" />
+262-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:102:13-67
+263        <activity
+263-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:103:9-106:56
+264            android:name="com.zipow.videobox.poll.PollingActivity"
+264-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:104:13-67
+265            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+265-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:105:13-139
+266            android:theme="@style/ZMTheme.SubWindow" />
+266-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:106:13-53
+267        <activity
+267-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:107:9-110:56
+268            android:name="com.zipow.videobox.poll.WebinarPollingActivity"
+268-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:108:13-74
+269            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+269-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:109:13-139
+270            android:theme="@style/ZMTheme.SubWindow" />
+270-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:110:13-53
+271        <activity
+271-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:111:9-114:56
+272            android:name="com.zipow.videobox.poll.PollingResultActivity"
+272-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:112:13-73
+273            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+273-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:113:13-139
+274            android:theme="@style/ZMTheme.SubWindow" />
+274-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:114:13-53
+275        <activity
+275-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:115:9-118:56
+276            android:name="com.zipow.videobox.poll.WebinarPollingResultActivity"
+276-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:116:13-80
+277            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+277-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:117:13-139
+278            android:theme="@style/ZMTheme.SubWindow" />
+278-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:118:13-53
+279        <activity
+279-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:119:9-122:56
+280            android:name="us.zoom.androidlib.app.ZMFileListActivity"
+280-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:120:13-69
+281            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+281-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:121:13-139
+282            android:theme="@style/ZMTheme.SubWindow" />
+282-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:122:13-53
+283        <activity
+283-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:123:9-127:56
+284            android:name="com.zipow.videobox.VirtualBackgroundActivity"
+284-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:124:13-72
+285            android:configChanges="orientation|screenSize|smallestScreenSize|layoutDirection|screenLayout|keyboardHidden|uiMode|colorMode"
+285-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:125:13-139
+286            android:hardwareAccelerated="true"
+286-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:126:13-47
+287            android:theme="@style/ZMTheme.SubWindow" />
+287-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:127:13-53
+288
+289        <service
+289-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:129:9-132:51
+290            android:name="com.zipow.videobox.kubi.KubiService"
+290-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:130:13-63
+291            android:exported="false"
+291-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:131:13-37
+292            android:label="@string/zm_app_name" />
+292-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:132:13-48
+293        <service
+293-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:133:9-135:40
+294            android:name="com.zipow.videobox.OnClearFromRecentService"
+294-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:134:13-71
+295            android:exported="false" />
+295-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:135:13-37
+296        <service
+296-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:136:9-140:51
+297            android:name="com.zipow.videobox.share.ScreenShareServiceForSDK"
+297-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:137:13-77
+298            android:exported="false"
+298-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:138:13-37
+299            android:foregroundServiceType="mediaProjection"
+299-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:139:13-60
+300            android:label="@string/zm_app_name" />
+300-->[:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:140:13-48
+301    </application>
+302
+303</manifest>
