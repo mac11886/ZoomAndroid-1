@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -26,6 +27,12 @@ import com.zipow.videobox.ptapp.PTApp;
 
 import java.util.List;
 
+import okhttp3.Cache;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 import us.zoom.sdk.IInterpretationLanguage;
 import us.zoom.sdk.IMeetingInterpretationControllerEvent;
 import us.zoom.sdk.InMeetingAnnotationController;
@@ -51,6 +58,7 @@ import us.zoom.sdksample.inmeetingfunction.customizedmeetingui.rawdata.WaterMark
 import us.zoom.sdksample.inmeetingfunction.customizedmeetingui.rawdata.YUVConvert;
 import us.zoom.sdksample.inmeetingfunction.customizedmeetingui.view.adapter.SimpleMenuAdapter;
 import us.zoom.sdksample.inmeetingfunction.customizedmeetingui.view.adapter.SimpleMenuItem;
+import us.zoom.sdksample.service.Api;
 import us.zoom.sdksample.ui.LoginUserStartJoinMeetingActivity;
 import us.zoom.sdksample.ui.QAActivity;
 
@@ -183,6 +191,9 @@ public class MeetingOptionBar extends FrameLayout implements View.OnClickListene
     }
 
     void init(Context context) {
+
+
+
         mContext = context;
         mContentView = LayoutInflater.from(context).inflate(R.layout.layout_meeting_option, this, false);
         addView(mContentView);
@@ -231,6 +242,8 @@ public class MeetingOptionBar extends FrameLayout implements View.OnClickListene
 
 
         findViewById(R.id.btnBack).setOnClickListener(this);
+
+
     }
 
     Runnable autoHidden = new Runnable() {
@@ -239,6 +252,8 @@ public class MeetingOptionBar extends FrameLayout implements View.OnClickListene
             hideOrShowToolbar(true);
         }
     };
+
+
 
     public void hideOrShowToolbar(boolean hidden) {
         removeCallbacks(autoHidden);
@@ -465,7 +480,7 @@ public class MeetingOptionBar extends FrameLayout implements View.OnClickListene
         }
 
         if (!isMySelfWebinarAttendee())
-            menuAdapter.addItem((new SimpleMenuItem(MENU_SHOW_PLIST, "Paticipants")));
+            menuAdapter.addItem((new SimpleMenuItem(MENU_SHOW_PLIST, "Participants")));
 
         if (meetingAnnotationController.canDisableViewerAnnotation()) {
             if (!meetingAnnotationController.isViewerAnnotationDisabled()) {

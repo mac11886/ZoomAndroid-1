@@ -37,10 +37,13 @@
                 android:src="@drawable/ic_baseline_check_circle_outline_24"/>
         </LinearLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rv_member"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="member"
+          android:textSize="16dp"
+          android:id="@+id/memberTeamTextview"
+          android:textColor="@color/black"/>
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

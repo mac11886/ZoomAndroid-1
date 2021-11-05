@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-169:12
-INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-169:12
-INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-169:12
-INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-169:12
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-174:12
+INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-174:12
+INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-174:12
+INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-174:12
 MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:2:1-143:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\6ca3ccc17af53a86ebb63098d0d5d566\navigation-ui-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\7a3b050dd67714e933e681c87f4d46dd\navigation-ui-2.3.0\AndroidManifest.xml:17:1-24:12
@@ -21,6 +21,9 @@ MERGED from [androidx.core:core-ktx:1.5.0] C:\Users\menin\.gradle\caches\transfo
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\db9cb72366293e4098688bfed40ae816\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\b6db6ca43c6823675f367cfa5baa3f97\appcompat-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidmads.library.qrgenearator:QRGenearator:1.0.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\d9385baa1d1f7e32ec34485bdf42bc8b\jetified-QRGenearator-1.0.3\AndroidManifest.xml:2:1-16:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\59294bf9da8e70e99a2ad78ee462ab29\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.security:security-crypto:1.1.0-alpha02] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\7209999edc56fc4c76f9dc2af12214f1\jetified-security-crypto-1.1.0-alpha02\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\e5f0d5d2f48bed398e45c974e981c01d\jetified-exoplayer-core-2.12.3\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\6aba77ce87b62d8347ca6f06e6145185\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -31,10 +34,8 @@ MERGED from [androidx.navigation:navigation-runtime:2.3.0] C:\Users\menin\.gradl
 MERGED from [androidx.activity:activity:1.2.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\dd9e31a923e296a6b8bb924275484742\jetified-activity-1.2.3\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\4c01e3142a179987077db51690cef9fb\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\fcdaabe3acafed622c2a36d692b38303\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\59294bf9da8e70e99a2ad78ee462ab29\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\6e4c8d1772fc6d6ee2099c68eedf1c03\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\5c010204b349cb67993103f3db4846c3\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\5772398f154fbb421660eae656082fcd\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.1] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\dd2af96806161be38a247736b3e70899\media-1.0.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\caea093eaa3f4ab10bb21ae1108e4fce\loader-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -63,14 +64,13 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\menin\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\cbd70468e6546e02da2f272bfa33baf7\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\5137eafb1b4aaaac7eb25bcb7474b774\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\a89fd51e9582eccdee29149516da0a3b\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\217472ccd08ea4a85c967983d0668f8b\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android:flexbox:2.0.1] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\b5140f57f6e3be6dc63569f946063af7\jetified-flexbox-2.0.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\6a06210c6361ff3ea980168cfde2160b\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\cff62913899b80d7e8d3945e2325a2f8\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-169:12
-INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-169:12
-INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-169:12
+INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-174:12
+INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-174:12
+INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:2:1-174:12
 	package
 		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:3:5-32
 		INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml
@@ -93,8 +93,36 @@ MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-
 MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:12:5-54
 	android:glEsVersion
 		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:8:19-51
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:9:5-68
+MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:41:5-68
+MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:41:5-68
+	android:name
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:9:22-65
+uses-permission#android.permission.INTERNET
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:10:5-67
+MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:31:5-67
+MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:31:5-67
+	android:name
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:10:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:11:5-79
+MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:33:5-79
+MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:33:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\e5f0d5d2f48bed398e45c974e981c01d\jetified-exoplayer-core-2.12.3\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\e5f0d5d2f48bed398e45c974e981c01d\jetified-exoplayer-core-2.12.3\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\a20ac57136845c156687d36ffbd7fa68\jetified-exoplayer-common-2.12.3\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\a20ac57136845c156687d36ffbd7fa68\jetified-exoplayer-common-2.12.3\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:12:5-75
+MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:32:5-75
+MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:32:5-75
+	android:name
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:12:22-72
 application
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:10:5-167:19
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:13:5-172:19
 MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:48:5-141:19
 MERGED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:48:5-141:19
 MERGED from [com.google.android.material:material:1.3.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\11c60f31c51e4efac774b7ac11e898a4\material-1.3.0\AndroidManifest.xml:22:5-20
@@ -112,217 +140,221 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\me
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\1fbf56c081c6627b11dd95e7e45a50b7\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\1fbf56c081c6627b11dd95e7e45a50b7\jetified-gifdecoder-4.11.0\AndroidManifest.xml:9:5-20
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:16:9-46
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:19:9-46
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\a8789f23a6e9adb0440bd271c485ef0c\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:15:9-46
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:18:9-46
 	android:hardwareAccelerated
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:13:9-43
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:16:9-43
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:14:9-45
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:17:9-45
 	android:allowBackup
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:12:9-36
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:15:9-36
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:11:9-61
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:14:9-61
 activity#us.zoom.sdksample.ui.DeviceActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:17:9-27:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:20:9-30:20
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:20:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:13-50
 	android:label
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:19:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:22:13-50
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:18:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:21:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:21:13-72
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:24:13-72
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:17:19-52
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:20:19-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:22:13-26:29
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:17-69
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:23:25-66
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.DEFAULT
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:17-76
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:28:17-76
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:25:27-73
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:28:27-73
 activity#us.zoom.sdksample.ui.ParticipantsActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:28:9-39:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:31:9-42:20
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:32:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:35:13-50
 	android:label
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:31:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:34:13-50
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:30:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:33:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:33:13-72
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:36:13-72
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:29:13-52
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:32:13-52
 activity#us.zoom.sdksample.ui.InitAuthSDKActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:40:9-52:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:43:9-55:20
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:45:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:48:13-50
 	android:label
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:44:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:47:13-50
 	android:configChanges
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:42:13-83
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:45:13-83
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:43:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:46:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:46:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:49:13-54
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:41:13-51
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:44:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:47:13-51:29
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:50:13-54:29
 category#android.intent.category.LAUNCHER
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:50:17-77
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:53:17-77
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:50:27-74
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:53:27-74
 activity#us.zoom.sdksample.ui.APIUserStartJoinMeetingActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:53:9-63:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:56:9-66:20
 	android:label
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:56:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:59:13-50
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:55:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:58:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:57:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:60:13-54
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:54:13-63
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:57:13-63
 activity#us.zoom.sdksample.ui.LoginUserStartJoinMeetingActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:64:9-75:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:67:9-78:20
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:68:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:71:13-50
 	android:label
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:67:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:70:13-50
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:66:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:69:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:69:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:72:13-54
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:65:13-65
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:68:13-65
 activity#us.zoom.sdksample.ui.EmailUserLoginActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:76:9-87:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:79:9-90:20
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:80:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:83:13-50
 	android:label
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:79:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:82:13-50
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:78:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:81:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:81:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:84:13-54
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:77:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:80:13-54
 activity#us.zoom.sdksample.ui.SSOUserLoginActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:88:9-99:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:91:9-102:20
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:92:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:95:13-49
 	android:label
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:91:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:94:13-50
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:90:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:93:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:93:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:96:13-54
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:89:13-52
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:92:13-52
 activity#us.zoom.sdksample.otherfeatures.MyInviteActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:100:9-111:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:103:9-114:20
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:104:13-50
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:107:13-50
 	android:label
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:103:13-42
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:106:13-42
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:102:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:105:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:105:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:108:13-54
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:101:13-59
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:104:13-59
 intent-filter#action:name:us.zoom.sdkexample.intent.action.MeetingInvite+category:name:android.intent.category.DEFAULT
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:106:13-110:29
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:109:13-113:29
 action#us.zoom.sdkexample.intent.action.MeetingInvite
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:107:17-89
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:110:17-89
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:107:25-86
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:110:25-86
 activity#us.zoom.sdksample.otherfeatures.MyWaitJoinActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:112:9-123:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:115:9-126:20
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:114:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:117:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:115:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:118:13-54
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:113:13-61
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:116:13-61
 activity#us.zoom.sdksample.otherfeatures.MyCallMeByPhoneActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:124:9-135:20
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:127:9-138:20
 	android:icon
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:126:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:129:13-49
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:127:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:130:13-54
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:125:13-66
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:128:13-66
 activity#us.zoom.sdksample.inmeetingfunction.customizedmeetingui.MyMeetingActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:136:9-140:56
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:139:9-143:56
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:139:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:142:13-50
 	android:configChanges
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:138:13-47
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:141:13-47
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:140:13-53
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:143:13-53
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:137:13-84
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:140:13-84
 activity#us.zoom.sdksample.ui.MeetingSettingActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:141:9-145:56
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:144:9-148:56
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:144:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:147:13-49
 	android:configChanges
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:143:13-47
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:146:13-47
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:145:13-53
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:148:13-53
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:142:13-54
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:145:13-54
 activity#us.zoom.sdksample.inmeetingfunction.customizedmeetingui.RawDataMeetingActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:146:9-150:56
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:149:9-153:56
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:149:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:152:13-49
 	android:configChanges
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:148:13-83
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:151:13-83
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:150:13-53
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:153:13-53
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:147:13-89
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:150:13-89
 activity#us.zoom.sdksample.ui.QAActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:151:9-51
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:154:9-51
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:151:19-48
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:154:19-48
 activity#us.zoom.sdksample.ui.BreakoutRoomsAdminActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:152:9-156:56
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:155:9-159:56
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:155:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:158:13-49
 	android:configChanges
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:154:13-47
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:157:13-47
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:156:13-53
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:159:13-53
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:153:13-58
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:156:13-58
 activity#us.zoom.sdksample.ui.BoEditActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:157:9-161:56
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:160:9-164:56
 	android:screenOrientation
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:160:13-49
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:163:13-49
 	android:configChanges
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:159:13-47
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:162:13-47
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:161:13-53
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:164:13-53
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:158:13-46
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:161:13-46
 activity#us.zoom.sdksample.inmeetingfunction.zoommeetingui.CustomZoomUIActivity
-ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:162:9-166:56
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:165:9-169:56
 	android:hardwareAccelerated
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:165:13-47
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:168:13-47
 	android:configChanges
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:164:13-59
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:167:13-59
 	android:theme
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:166:13-53
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:169:13-53
 	android:name
-		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:163:13-81
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:166:13-81
+service#org.eclipse.paho.android.service.MqttService
+ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:170:9-171:19
+	android:name
+		ADDED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml:170:18-77
 uses-sdk
 INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\sample\src\main\AndroidManifest.xml
@@ -361,6 +393,12 @@ MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\menin\.gradle\caches\t
 MERGED from [androidx.appcompat:appcompat:1.3.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\b6db6ca43c6823675f367cfa5baa3f97\appcompat-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidmads.library.qrgenearator:QRGenearator:1.0.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\d9385baa1d1f7e32ec34485bdf42bc8b\jetified-QRGenearator-1.0.3\AndroidManifest.xml:7:5-9:41
 MERGED from [androidmads.library.qrgenearator:QRGenearator:1.0.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\d9385baa1d1f7e32ec34485bdf42bc8b\jetified-QRGenearator-1.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\59294bf9da8e70e99a2ad78ee462ab29\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\59294bf9da8e70e99a2ad78ee462ab29\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.security:security-crypto:1.1.0-alpha02] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\7209999edc56fc4c76f9dc2af12214f1\jetified-security-crypto-1.1.0-alpha02\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.security:security-crypto:1.1.0-alpha02] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\7209999edc56fc4c76f9dc2af12214f1\jetified-security-crypto-1.1.0-alpha02\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\e5f0d5d2f48bed398e45c974e981c01d\jetified-exoplayer-core-2.12.3\AndroidManifest.xml:20:5-22:41
@@ -381,14 +419,10 @@ MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\menin\.gradl
 MERGED from [androidx.appcompat:appcompat-resources:1.3.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\4c01e3142a179987077db51690cef9fb\jetified-appcompat-resources-1.3.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\fcdaabe3acafed622c2a36d692b38303\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\fcdaabe3acafed622c2a36d692b38303\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\59294bf9da8e70e99a2ad78ee462ab29\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\59294bf9da8e70e99a2ad78ee462ab29\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\6e4c8d1772fc6d6ee2099c68eedf1c03\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\6e4c8d1772fc6d6ee2099c68eedf1c03\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\5c010204b349cb67993103f3db4846c3\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\5c010204b349cb67993103f3db4846c3\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\5772398f154fbb421660eae656082fcd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\5772398f154fbb421660eae656082fcd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.media:media:1.0.1] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\dd2af96806161be38a247736b3e70899\media-1.0.1\AndroidManifest.xml:20:5-44
@@ -445,8 +479,6 @@ MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\menin\.gradle\cache
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\5137eafb1b4aaaac7eb25bcb7474b774\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\a89fd51e9582eccdee29149516da0a3b\documentfile-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\a89fd51e9582eccdee29149516da0a3b\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\217472ccd08ea4a85c967983d0668f8b\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\217472ccd08ea4a85c967983d0668f8b\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android:flexbox:2.0.1] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\b5140f57f6e3be6dc63569f946063af7\jetified-flexbox-2.0.1\AndroidManifest.xml:22:5-24:41
@@ -505,22 +537,6 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:30:5-80
 	android:name
 		ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:30:22-77
-uses-permission#android.permission.INTERNET
-ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:31:5-67
-	android:name
-		ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:31:22-64
-uses-permission#android.permission.READ_PHONE_STATE
-ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:32:5-75
-	android:name
-		ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:32:22-72
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:33:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\e5f0d5d2f48bed398e45c974e981c01d\jetified-exoplayer-core-2.12.3\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\e5f0d5d2f48bed398e45c974e981c01d\jetified-exoplayer-core-2.12.3\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\a20ac57136845c156687d36ffbd7fa68\jetified-exoplayer-common-2.12.3\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.12.3] C:\Users\menin\.gradle\caches\transforms-2\files-2.1\a20ac57136845c156687d36ffbd7fa68\jetified-exoplayer-common-2.12.3\AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:33:22-76
 uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:34:5-76
 	android:name
@@ -549,10 +565,6 @@ uses-permission#android.permission.BROADCAST_STICKY
 ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:40:5-75
 	android:name
 		ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:40:22-72
-uses-permission#android.permission.WAKE_LOCK
-ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:41:5-68
-	android:name
-		ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:41:22-65
 uses-permission#android.permission.CALL_PHONE
 ADDED from [:mobilertc] D:\Project_Kisra\PMUC\zoom-sdk-android-5.7.1.1268\zoom-sdk-android-5.7.1.1268\mobilertc-android-studio\mobilertc\build\.transforms\c3e15e90780fc4062ceacafec69fce6e\jetified-mobilertc\AndroidManifest.xml:42:5-69
 	android:name

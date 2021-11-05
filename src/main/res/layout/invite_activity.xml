@@ -6,16 +6,18 @@
     android:layout_height="match_parent"
     android:background="@color/blueBg"
     android:orientation="vertical" >
+
     <View
         android:id="@+id/imageView3"
-        android:layout_width="851dp"
-        android:layout_height="429dp"
+        android:layout_width="906dp"
+        android:layout_height="451dp"
         android:layout_marginBottom="21dp"
         android:background="@drawable/rectangle_white_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.687" />
 
     <TextView
         android:id="@+id/txtUrl"
@@ -80,12 +82,14 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <LinearLayout
+        android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/qrcodeImageview"
+        app:layout_constraintVertical_bias="0.219"
         tools:layout_editor_absoluteX="0dp">
 
         <EditText
@@ -95,12 +99,12 @@
             android:layout_marginStart="228dp"
             android:layout_marginEnd="30dp"
             android:layout_weight="1"
-            android:ems="10"
-            android:textStyle="bold"
-            android:textColor="@color/blueBtn"
             android:background="@color/blueBg"
+            android:ems="10"
             android:inputType="textPersonName"
-            android:text="" />
+            android:text=""
+            android:textColor="@color/blueBtn"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/copyText"
@@ -117,6 +121,21 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/doneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="48dp"
+        android:layout_weight="0.5"
+        android:background="@drawable/rec_green_btn"
+        android:text="Done"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+    <Button
         android:id="@+id/copyImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -130,13 +149,13 @@
         android:layout_height="wrap_content"
         android:text="Shared Meeting"
         android:textColor="@color/blueBtn"
-        android:textStyle="bold"
         android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/qrcodeImageview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754" />
+        app:layout_constraintVertical_bias="0.558" />
 
     <LinearLayout
         android:id="@+id/linearLayout"

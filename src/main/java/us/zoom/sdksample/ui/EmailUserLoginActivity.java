@@ -1,6 +1,7 @@
 package us.zoom.sdksample.ui;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -33,11 +34,15 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import us.zoom.sdk.JoinMeetingOptions;
+import us.zoom.sdk.JoinMeetingParams;
 import us.zoom.sdk.ZoomApiError;
 import us.zoom.sdk.ZoomAuthenticationError;
+import us.zoom.sdk.ZoomSDK;
 import us.zoom.sdksample.Model.Posts;
 import us.zoom.sdksample.Model.User;
 import us.zoom.sdksample.R;
+import us.zoom.sdksample.inmeetingfunction.zoommeetingui.ZoomMeetingUISettingHelper;
 import us.zoom.sdksample.otherfeatures.MyInviteActivity;
 import us.zoom.sdksample.service.Api;
 
@@ -59,10 +64,10 @@ public class EmailUserLoginActivity extends Activity implements UserLoginCallbac
 	private UserAdapter adapter;
 	private Api api;
 	SharedPreferences sharedPreferences;
-
+	ProgressDialog progressDialog;
 	List<User> users;
-
-
+	private EditText meetingNumEdt,nameEdt;
+	private Button joinBtn;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -82,23 +87,26 @@ public class EmailUserLoginActivity extends Activity implements UserLoginCallbac
 						public void onClick(DialogInterface dialog, int id) {
 						copy(EmailUserLoginActivity.this,"https://zoom.ksta.co/api/download/"+loadSharedPreferenceMeetingId());
 						}
-					});
+					})
 
-//					.setNegativeButton("No", new DialogInterface.OnClickListener() {
-//						public void onClick(DialogInterface dialog, int id) {
-//							//  Action for 'NO' Button
-//							dialog.cancel();
+					.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+						public void onClick(DialogInterface dialog, int id) {
+							//  Action for 'NO' Button
+							dialog.cancel();
 //							Toast.makeText(getApplicationContext(),"you choose no action for alertbox",
 //									Toast.LENGTH_SHORT).show();
-//						}
-//					});
+						}
+					});
 			//Creating dialog box
 			AlertDialog alert = builder.create();
 			//Setting the title manually
 			alert.setTitle("Link for download");
 			alert.setMessage("https://zoom.ksta.co/api/download/"+loadSharedPreferenceMeetingId());
 			alert.show();
+
 		}
+		progressDialog = ProgressDialog.show(EmailUserLoginActivity.this,"Loading","Loading...",true,false);
+
 		getUser();
 		initUI();
 		mEdtUserName = (EditText)findViewById(R.id.userName);
@@ -128,12 +136,34 @@ public class EmailUserLoginActivity extends Activity implements UserLoginCallbac
 		ClipData clipData = ClipData.newHtmlText("Copied ", url, url);
 		clipboardManager.setPrimaryClip(clipData);
 	}
+	public void joinMeeting(String number , String name){
+		JoinMeetingParams params = new JoinMeetingParams();
+		params.meetingNo = number;
+		params.displayName = name;
+		JoinMeetingOptions options=new JoinMeetingOptions();
+		ZoomSDK.getInstance().getMeetingService().joinMeetingWithParams(this, params, ZoomMeetingUISettingHelper.getJoinMeetingOptions());
+	}
+	private void sharedPreferencesPatient(){
+		SharedPreferences sharedPreferences = getSharedPreferences("PATIENT", 0);
+		SharedPreferences.Editor editor = sharedPreferences.edit();
+		editor.putString("patient", "true");
+		editor.commit();
+	}
 	void initUI(){
 		recyclerView = findViewById(R.id.userRecyclerView);
-
+		meetingNumEdt = findViewById(R.id.meetingNumLogin);
+		nameEdt = findViewById(R.id.passwordlogin);
+		joinBtn = findViewById(R.id.joinBtn);
 
 		selectBtn = findViewById(R.id.selectUser);
 
+		joinBtn.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				joinMeeting(meetingNumEdt.getText().toString(),nameEdt.getText().toString());
+				sharedPreferencesPatient();
+			}
+		});
 		selectBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -142,7 +172,7 @@ public class EmailUserLoginActivity extends Activity implements UserLoginCallbac
 					String  userName = adapter.getSelected().getEmail();
 					String password = adapter.getSelected().getPassword();
 					String uidLine = adapter.getSelected().getToken_line();
-
+					String idHost = String.valueOf(adapter.getSelected().getId());
 					int ret=EmailUserLoginHelper.getInstance().login(userName, password);
 					if(!(ret== ZoomApiError.ZOOM_API_ERROR_SUCCESS)) {
 						if (ret == ZoomApiError.ZOOM_API_ERROR_EMAIL_LOGIN_IS_DISABLED) {
@@ -161,6 +191,10 @@ public class EmailUserLoginActivity extends Activity implements UserLoginCallbac
 						intent.putExtra("tokenHost",uidLine);
 						intent.putExtra("userName",userName);
 						intent.putExtra("password",password);
+						SharedPreferences sharedPreferences = getSharedPreferences("IDHOST",0);
+						SharedPreferences.Editor editor = sharedPreferences.edit();
+						editor.putString("idhost",idHost);
+						editor.commit();
 						try{
 							startActivity(intent);
 						}catch (Exception e){
@@ -209,6 +243,7 @@ public class EmailUserLoginActivity extends Activity implements UserLoginCallbac
 					users = response.body();
 
 					createList();
+					progressDialog.dismiss();
 				}
 
 				@Override

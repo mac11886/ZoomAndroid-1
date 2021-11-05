@@ -139,6 +139,7 @@ public class RawDataMeetingActivity extends FragmentActivity implements InMeetin
         ZoomSDK.getInstance().getInMeetingService().addListener(this);
         ZoomSDK.getInstance().getMeetingService().addListener(this);
         ZoomSDK.getInstance().getInMeetingService().getInMeetingShareController().addListener(this);
+
     }
 
     @Override

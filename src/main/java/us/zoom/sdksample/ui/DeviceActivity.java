@@ -26,6 +26,7 @@ import us.zoom.sdk.MeetingService;
 import us.zoom.sdk.MeetingStatus;
 import us.zoom.sdk.ZoomSDK;
 import us.zoom.sdksample.Model.Device;
+import us.zoom.sdksample.Model.ZoomHost;
 import us.zoom.sdksample.R;
 import us.zoom.sdksample.service.Api;
 import us.zoom.sdksample.startjoinmeeting.LoginUserStartMeetingHelper;
@@ -79,22 +80,21 @@ public class DeviceActivity extends AppCompatActivity {
     public int create(Context context) {
         int ret = -1;
         ZoomSDK zoomSDK = ZoomSDK.getInstance();
-        zoomSDK.getMeetingSettingsHelper().setCustomizedMeetingUIEnabled(true);
         MeetingService meetingService = zoomSDK.getMeetingService();
-        if (meetingService == null) {
+        if(meetingService == null) {
             return ret;
         }
 
         InstantMeetingOptions opts = new InstantMeetingOptions();
-        //		opts.no_driving_mode = true;
-        //		opts.no_invite = true;
-        //		opts.no_meeting_end_message = true;
-        //		opts.no_titlebar = true;
-        //		opts.no_bottom_toolbar = true;
-        //		opts.no_dial_in_via_phone = true;
-        //		opts.no_dial_out_to_phone = true;
-        //		opts.no_disconnect_audio = true;
-        //		opts.no_share = true;
+//		opts.no_driving_mode = true;
+//		opts.no_invite = true;
+//		opts.no_meeting_end_message = true;
+//		opts.no_titlebar = true;
+//		opts.no_bottom_toolbar = true;
+//		opts.no_dial_in_via_phone = true;
+//		opts.no_dial_out_to_phone = true;
+//		opts.no_disconnect_audio = true;
+//		opts.no_share = true;
 
         return meetingService.startInstantMeeting(context, opts);
     }

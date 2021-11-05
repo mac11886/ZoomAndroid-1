@@ -6,7 +6,10 @@
     android:versionName="1.0">
 
     <uses-feature android:glEsVersion="0x00020000" />
-
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <application
         android:name="androidx.multidex.MultiDexApplication"
         android:allowBackup="false"
@@ -136,7 +139,7 @@
         <activity
             android:name=".inmeetingfunction.customizedmeetingui.MyMeetingActivity"
             android:configChanges="screenSize"
-            android:screenOrientation="portrait"
+            android:screenOrientation="landscape"
             android:theme="@style/ZMTheme.SubWindow" />
         <activity
             android:name=".ui.MeetingSettingActivity"
@@ -164,6 +167,8 @@
             android:configChanges="orientation|screenSize"
             android:hardwareAccelerated="true"
             android:theme="@style/ZMTheme.SubWindow" />
+        <service android:name="org.eclipse.paho.android.service.MqttService" >
+        </service>
     </application>
 
 </manifest>

@@ -3,8 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-     <Button
+
+    <Button
         android:id="@+id/btnAction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -12,9 +12,12 @@
         android:layout_gravity="center_horizontal"
         android:text="action"
         android:visibility="gone"/>
-     
-	<ListView
+
+    <ListView
         android:id="@+id/meetingsListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+
+    </ListView>
+
 </LinearLayout>

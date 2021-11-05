@@ -14,16 +14,27 @@ public class User {
     }
 
     private int id ;
+
+    public int getTeam_id() {
+        return team_id;
+    }
+
+    public void setTeam_id(int team_id) {
+        this.team_id = team_id;
+    }
+
+    private int team_id;
     private String name;
     private String password;
     private String token_line;
     private String email;
-    public User(String name, String email, String password, String token_line,int id) {
+    public User(String name,int team_id, String email, String password, String token_line,int id) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.token_line = token_line;
         this.id = id;
+        this.team_id = team_id;
     }
 
 

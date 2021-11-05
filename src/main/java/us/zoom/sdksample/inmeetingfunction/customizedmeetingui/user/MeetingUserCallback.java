@@ -48,6 +48,7 @@ public class MeetingUserCallback extends BaseCallback<MeetingUserCallback.UserEv
 
             for (UserEvent event : callbacks) {
                 event.onMeetingUserJoin(list);
+                System.out.println();
             }
         }
 

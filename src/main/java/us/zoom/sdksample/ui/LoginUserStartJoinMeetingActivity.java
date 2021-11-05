@@ -33,6 +33,7 @@ import us.zoom.sdksample.startjoinmeeting.joinmeetingonly.JoinMeetingHelper;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -54,7 +55,7 @@ import java.util.List;
 public class LoginUserStartJoinMeetingActivity extends Activity implements AuthConstants, MeetingServiceListener, ZoomSDKAuthenticationListener {
 
     private final static String TAG = "ZoomSDKExample";
-    private LinearLayout linearLayout,linearLayoutSetting;
+    private LinearLayout linearLayout, linearLayoutSetting;
     private EditText mEdtMeetingNo;
     private EditText mEdtMeetingPassword;
     private EditText mEdtVanityId;
@@ -79,7 +80,7 @@ public class LoginUserStartJoinMeetingActivity extends Activity implements AuthC
     private DeviceAdapter adapter;
     //    private String TAG = "DeviceActivity";
     private Button startBtn;
-
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,12 +89,13 @@ public class LoginUserStartJoinMeetingActivity extends Activity implements AuthC
         setContentView(R.layout.login_user_start_join);
 
         initUI();
+        progressDialog = ProgressDialog.show(LoginUserStartJoinMeetingActivity.this, "Loading","Loading...", true, false);
         getAllDevice();
         registerListener();
     }
 
     private void initUI() {
-        linearLayoutSetting =findViewById(R.id.linearSetting) ;
+        linearLayoutSetting = findViewById(R.id.linearSetting);
         linearLayout = findViewById(R.id.linearBtn);
         mEdtMeetingNo = (EditText) findViewById(R.id.edtMeetingNo);
         mEdtVanityId = (EditText) findViewById(R.id.edtVanityUrl);
@@ -138,8 +140,14 @@ public class LoginUserStartJoinMeetingActivity extends Activity implements AuthC
                     SharedPreferences.Editor editor1 = sharedPreferences1.edit();
                     editor1.putString("from", "");
                     editor1.commit();
-                    onClickBtnLoginUserStartInstant();
 
+                    SharedPreferences sharedPreferences2 = getSharedPreferences("PATIENT", 0);
+                    SharedPreferences.Editor editor2 = sharedPreferences2.edit();
+                    editor2.putString("patient", "");
+                    editor2.commit();
+
+//                    onClickBtnLoginUserStartInstant();
+                    create(LoginUserStartJoinMeetingActivity.this);
                 }
             }
         });
@@ -156,16 +164,25 @@ public class LoginUserStartJoinMeetingActivity extends Activity implements AuthC
         }
 
         InstantMeetingOptions opts = new InstantMeetingOptions();
-        //		opts.no_driving_mode = true;
-        //		opts.no_invite = true;
-        //		opts.no_meeting_end_message = true;
-        //		opts.no_titlebar = true;
-        //		opts.no_bottom_toolbar = true;
-        //		opts.no_dial_in_via_phone = true;
-        //		opts.no_dial_out_to_phone = true;
-        //		opts.no_disconnect_audio = true;
-        //		opts.no_share = true;
+//		opts.no_driving_mode = true;
+//		opts.no_invite = true;
+//		opts.no_meeting_end_message = true;
+//		opts.no_titlebar = true;
+//		opts.no_bottom_toolbar = true;
+//		opts.no_dial_in_via_phone = true;
+//		opts.no_dial_out_to_phone = true;
+//		opts.no_disconnect_audio = true;
+//		opts.no_share = true;
 
+            meetingService.addListener(new MeetingServiceListener() {
+                @Override
+                public void onMeetingStatusChanged(MeetingStatus meetingStatus, int i, int i1) {
+                    if (meetingStatus == MeetingStatus.MEETING_STATUS_INMEETING){
+                        System.out.println("from loginuser" +meetingService.getCurrentRtcMeetingNumber());
+
+                    }
+                }
+            });
         return meetingService.startInstantMeeting(context, opts);
     }
 
@@ -188,6 +205,7 @@ public class LoginUserStartJoinMeetingActivity extends Activity implements AuthC
 //                    for (int i =0 ;i<device.size();i++){
 //                        System.out.println(device.get(i).getName());
 //                    }
+                    progressDialog.dismiss();
                 } else {
 
                 }
@@ -497,11 +515,10 @@ public class LoginUserStartJoinMeetingActivity extends Activity implements AuthC
 
     @Override
     public void onBackPressed() {
-        if (ZoomSDK.getInstance().isLoggedIn()) {
-            moveTaskToBack(true);
-        } else {
-            super.onBackPressed();
-        }
+
+        super.onBackPressed();
+//        LoginUserStartJoinMeetingActivity loginUserStartJoinMeetingActivity = new LoginUserStartJoinMeetingActivity();
+//        loginUserStartJoinMeetingActivity.onClickBtnLogout();
     }
 
     @Override

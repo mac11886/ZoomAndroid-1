@@ -2,9 +2,11 @@ package us.zoom.sdksample.startjoinmeeting;
 
 import android.content.Context;
 
+import us.zoom.sdk.InMeetingCloudRecordController;
 import us.zoom.sdk.InstantMeetingOptions;
 import us.zoom.sdk.MeetingOptions;
 import us.zoom.sdk.MeetingService;
+import us.zoom.sdk.MobileRTCSDKError;
 import us.zoom.sdk.StartMeetingOptions;
 import us.zoom.sdk.StartMeetingParams;
 import us.zoom.sdk.StartMeetingParams4NormalUser;
@@ -58,15 +60,14 @@ public class LoginUserStartMeetingHelper {
 
     public int startInstanceMeeting(Context context) {
         int ret = -1;
-        mZoomSDK.getMeetingSettingsHelper().setCustomizedMeetingUIEnabled(true);
         MeetingService meetingService = mZoomSDK.getMeetingService();
         if(meetingService == null) {
             return ret;
         }
-
         StartMeetingOptions opts = ZoomMeetingUISettingHelper.getStartMeetingOptions();
         opts.no_video=false;
-        opts.no_record=false;
+        opts.no_share=true;
+        opts.no_bottom_toolbar = true;
         opts.no_audio=false;
 
         return meetingService.startInstantMeeting(context, opts);

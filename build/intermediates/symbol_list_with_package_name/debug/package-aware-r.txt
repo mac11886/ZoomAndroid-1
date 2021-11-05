@@ -1321,6 +1321,7 @@ color exo_white
 color exo_white_opacity_70
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color lan_text_selector
@@ -3273,6 +3274,7 @@ drawable reaction_slower
 drawable reaction_yes
 drawable rec_blue_btn
 drawable rec_btn
+drawable rec_green_btn
 drawable rectangle_white_bg
 drawable red_btn_bg_normal
 drawable red_btn_bg_normal_v2
@@ -5195,6 +5197,9 @@ id attachments_size
 id attendeesListView
 id audio
 id audioStatusImage
+id audio_discusstionBtn
+id audio_normalBtn
+id audio_patientBtn
 id auto
 id autoComplete
 id autoCompleteToEnd
@@ -5609,6 +5614,7 @@ id button
 id button1
 id button2
 id button3
+id button7
 id buttonChat
 id buttonPanel
 id buttonPanelHorizontal
@@ -5652,6 +5658,7 @@ id chatsListView
 id check
 id checkDeviceImageView
 id checkImageView
+id checkImageViewRecent
 id checkSelectItem
 id checkTeamImageView
 id check_select
@@ -5842,6 +5849,7 @@ id customView
 id custom_share_view
 id cut
 id dark
+id dateMeeting
 id datePicker
 id date_picker_actions
 id decelerate
@@ -5885,6 +5893,7 @@ id displayText
 id divider
 id dividerLine
 id dlpMark
+id doneBtn
 id dot
 id down_pre
 id downloadLayout
@@ -6510,6 +6519,7 @@ id iv_photo
 id iv_tip_arrow
 id iv_triangle
 id iv_whisper
+id joinBtn
 id joinLeftBtn
 id joinRightBtn
 id joinTitle
@@ -6592,6 +6602,7 @@ id linearLayout
 id linearLayout1
 id linearLayout2
 id linearLayout3
+id linearLayout4
 id linearMultiActions1
 id linearMultiActions2
 id linearOneDialState
@@ -6684,6 +6695,7 @@ id media_actions
 id meetingCategory
 id meetingIdContainer
 id meetingLinkEditText
+id meetingNumLogin
 id meetingNumber
 id meetingSetting
 id meetingTitle
@@ -6692,6 +6704,7 @@ id meetingTopic
 id meetingVideoView
 id meeting_option_contain
 id meetingsListView
+id memberTeamTextview
 id members_can_not_invite_text
 id members_count_layout
 id members_count_tv
@@ -7361,6 +7374,7 @@ id participantsRecyclerView
 id password
 id passwordContainer
 id password_toggle
+id passwordlogin
 id path
 id pathRelative
 id pbFileStatus
@@ -7390,6 +7404,7 @@ id playerView
 id plistView
 id position
 id postLayout
+id power_unitBtn
 id prefix_posted_by
 id presenceStateView
 id presenceStatus
@@ -7495,7 +7510,6 @@ id row_index_key
 id row_reverse
 id rvPList
 id rvSelectCountry
-id rv_member
 id rv_members
 id rv_photos
 id rv_session_list
@@ -7745,9 +7759,11 @@ id textView
 id textView2
 id textView3
 id textView4
+id textView5
 id textView6
 id textView7
 id textView8
+id textView9
 id textWho
 id text_audio
 id text_connecting
@@ -8798,6 +8814,7 @@ layout init_auth_sdk
 layout invite_activity
 layout item_attend
 layout item_device
+layout item_recently
 layout item_user
 layout item_user_video
 layout layout_assign_user_to_bo

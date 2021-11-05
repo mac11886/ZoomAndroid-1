@@ -49,12 +49,15 @@ public class MyInviteActivity extends Activity {
     private Api api;
     private ImageView qrcodeImage;
     private EditText urlEdiText;
-    private Button copyImageBtn, copyTextBtn;
+    private Button copyImageBtn, copyTextBtn ,doneBtn;
     Bitmap bitmap;
     private List<User> users;
     QRGEncoder qrgEncoder;
     private Uri uri;
-
+    Retrofit retrofit = new Retrofit.Builder()
+            .baseUrl("https://zoom.ksta.co/api/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build();
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -116,6 +119,13 @@ public class MyInviteActivity extends Activity {
         urlEdiText = findViewById(R.id.urlEditText);
         copyImageBtn = findViewById(R.id.copyImage);
         copyTextBtn = findViewById(R.id.copyText);
+        doneBtn = findViewById(R.id.doneBtn);
+        doneBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         copyTextBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -220,22 +230,23 @@ public class MyInviteActivity extends Activity {
         }
     }
 
-
+    public String loadSharedPreferenceIdhost() {
+        SharedPreferences sharedPreferences = getSharedPreferences("IDHOST", 0);
+        String idhost = sharedPreferences.getString("idhost", "");
+        return idhost;
+    }
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void postMeeting(String topic, String url, String meeting_id, String password) {
-        Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://zoom.ksta.co/api/")
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
+
         api = retrofit.create(Api.class);
         String device_id = loadSharedPreferenceDevice();
-        zoom_list zoomlist = new zoom_list(device_id, topic, url, meeting_id, password);
+        zoom_list zoomlist = new zoom_list(device_id,Integer.parseInt(loadSharedPreferenceIdhost()), topic, url, meeting_id, password);
         Call<zoom_list> call = api.postMeeting(zoomlist);
         call.enqueue(new Callback<zoom_list>() {
             @Override
             public void onResponse(Call<zoom_list> call, Response<zoom_list> response) {
                 if (response.isSuccessful()) {
-                    Log.i("response", "success");
+                    Log.i("response", "success");       
                 } else {
                     Log.i("response", " not success");
                 }
@@ -243,7 +254,7 @@ public class MyInviteActivity extends Activity {
 
             @Override
             public void onFailure(Call<zoom_list> call, Throwable t) {
-                Log.i("response", "failed");
+                Log.i("response", "failed:" +t.getMessage());
             }
         });
     }

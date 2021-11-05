@@ -216,7 +216,33 @@
 
     </LinearLayout>
 
-    <View
+	<EditText
+		android:id="@+id/meetingNumLogin"
+		android:layout_width="190dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="124dp"
+		android:layout_marginTop="84dp"
+		android:focusable="true"
+		android:hint="Meeting Number"
+		android:inputType="text"
+		android:translationZ="2dp"
+		app:layout_constraintStart_toEndOf="@+id/view2"
+		app:layout_constraintTop_toTopOf="@+id/view2"></EditText>
+
+	<EditText
+		android:id="@+id/passwordlogin"
+		android:layout_width="190dp"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="124dp"
+		android:layout_marginTop="28dp"
+		android:focusable="true"
+		android:hint="Name"
+		android:inputType="text"
+		android:translationZ="2dp"
+		app:layout_constraintStart_toEndOf="@+id/view2"
+		app:layout_constraintTop_toBottomOf="@+id/meetingNumLogin"></EditText>
+
+	<View
 		android:id="@+id/view2"
 		android:layout_width="3dp"
 		android:layout_height="360dp"
@@ -238,4 +264,14 @@
 		app:layout_constraintEnd_toEndOf="parent"
 		app:layout_constraintStart_toStartOf="parent"
 		app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+	<Button
+		android:id="@+id/joinBtn"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="156dp"
+		android:layout_marginTop="20dp"
+		android:text="Join meeting"
+		app:layout_constraintStart_toEndOf="@+id/view2"
+		app:layout_constraintTop_toBottomOf="@+id/passwordlogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

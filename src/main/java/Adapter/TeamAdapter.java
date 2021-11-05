@@ -14,7 +14,9 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
+import us.zoom.sdksample.Model.Team;
 import us.zoom.sdksample.Model.User;
 import us.zoom.sdksample.R;
 
@@ -23,18 +25,18 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     Context context;
     //init
     private Activity activity;
-    ArrayList<String> arrayListGroup;
+    List<Team> arrayListGroup;
     boolean isSelectMode = false;
     private int checkedPosition = 0;
-    ArrayList<String> selectItem = new ArrayList<>();
+    List<Team> selectItem = new ArrayList<>();
 
     //constructor
-    public TeamAdapter(Activity activity, ArrayList<String> arrayListGroup) {
+    public TeamAdapter(Activity activity, List<Team> arrayListGroup) {
         this.activity = activity;
         this.arrayListGroup = arrayListGroup;
     }
 
-    public ArrayList<String> getSelectItem() {
+    public List<Team> getSelectItem() {
         if (selectItem != null) {
             return selectItem;
         }
@@ -50,22 +52,30 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull TeamAdapter.ViewHolder holder, int position) {
-        holder.tvName.setText(arrayListGroup.get(position));
+        holder.tvName.setText(arrayListGroup.get(position).getName());
+        String name = "";
+        for (User user : arrayListGroup.get(position).getUser()) {
+            name += user.getName();
+            name += ",";
+
+        }
+        name = name.substring(0,name.length() - 1);
+        holder.memberText.setText(name);
 
         //init member
-        ArrayList<String> arrayListMember = new ArrayList<>();
-        //using for loop to add multiple member
-        for (int i = 1; i <= 4; i++) {
-            arrayListMember.add("member" + i);
-        }
+//        ArrayList<String> arrayListMember = new ArrayList<>();
+//        //using for loop to add multiple member
+//        for (int i = 1; i <= 4; i++) {
+//            arrayListMember.add("member" + i);
+//        }
 
-        MemberAdapter memberAdapter = new MemberAdapter(arrayListMember);
-        //init layout manager
-        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(activity);
-        //set layout manager
-        holder.rvMember.setLayoutManager(linearLayoutManager);
-        //set adapter
-        holder.rvMember.setAdapter(memberAdapter);
+//        MemberAdapter memberAdapter = new MemberAdapter(arrayListMember);
+//        //init layout manager
+//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(activity);
+//        //set layout manager
+//        holder.rvMember.setLayoutManager(linearLayoutManager);
+//        //set adapter
+//        holder.rvMember.setAdapter(memberAdapter);
 
     }
 
@@ -77,14 +87,14 @@ public class TeamAdapter extends RecyclerView.Adapter<TeamAdapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder {
         //init
         TextView tvName;
-        RecyclerView rvMember;
+        TextView memberText;
         ImageView checkImage;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             checkImage = itemView.findViewById(R.id.checkTeamImageView);
             tvName = itemView.findViewById(R.id.tv_name);
-            rvMember = itemView.findViewById(R.id.rv_member);
+            memberText = itemView.findViewById(R.id.memberTeamTextview);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {

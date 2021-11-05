@@ -21,6 +21,41 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></include>
 
+    <Button
+        android:id="@+id/audio_normalBtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:text="Audio/Normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar" />
+
+    <Button
+        android:id="@+id/audio_discusstionBtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="Audio/Discussion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audio_normalBtn" />
+
+    <Button
+        android:id="@+id/audio_patientBtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="Audio/Patient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audio_discusstionBtn" />
+
+    <Button
+        android:id="@+id/power_unitBtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:text="PowerUnit/cmd"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/audio_patientBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
     <include
         android:id="@+id/bottom_bar"
         layout="@layout/layout_meeting_bottombar"

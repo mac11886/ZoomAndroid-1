@@ -32,14 +32,27 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+import org.eclipse.paho.android.service.MqttAndroidClient;
+import org.eclipse.paho.client.mqttv3.IMqttActionListener;
+import org.eclipse.paho.client.mqttv3.IMqttDeliveryToken;
+import org.eclipse.paho.client.mqttv3.IMqttToken;
+import org.eclipse.paho.client.mqttv3.MqttCallback;
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+
 import java.util.List;
 
-import Adapter.FunctionAll;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -63,7 +76,6 @@ import us.zoom.sdk.InMeetingService;
 import us.zoom.sdk.InMeetingServiceListener;
 import us.zoom.sdk.InMeetingUserInfo;
 import us.zoom.sdk.MeetingService;
-import us.zoom.sdk.MeetingServiceListener;
 import us.zoom.sdk.MeetingStatus;
 import us.zoom.sdk.MobileRTCRenderInfo;
 import us.zoom.sdk.MobileRTCSMSVerificationError;
@@ -101,6 +113,9 @@ import us.zoom.sdksample.ui.LoginUserStartJoinMeetingActivity;
 import us.zoom.sdksample.ui.UIUtil;
 
 import static us.zoom.sdk.MobileRTCSDKError.SDKERR_SUCCESS;
+
+import java.time.LocalTime;  // import the LocalTime class
+import java.time.format.DateTimeFormatter;
 
 public class MyMeetingActivity extends FragmentActivity implements View.OnClickListener, MeetingVideoCallback.VideoEvent,
         MeetingAudioCallback.AudioEvent, MeetingShareCallback.ShareEvent,
@@ -191,6 +206,21 @@ public class MyMeetingActivity extends FragmentActivity implements View.OnClickL
 
     public static final int JOIN_FROM_LOGIN = 3;
 
+    String timeStart = "";
+    String timeEnd = "";
+    String meetingNumberText = "";
+    String topic, clientId;
+    private MqttAndroidClient client;
+    private Button audioNormalBtn, audioDiscusstionBtn, audioPatientBtn, powerUnitBtn;
+    Gson gson = new GsonBuilder()
+            .setLenient()
+            .create();
+    Retrofit retrofit = new Retrofit.Builder()
+            .baseUrl("https://zoom.ksta.co/api/")
+            .addConverterFactory(GsonConverterFactory.create(gson))
+            .build();
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -198,9 +228,10 @@ public class MyMeetingActivity extends FragmentActivity implements View.OnClickL
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-        FunctionAll functionAll = new FunctionAll();
-        functionAll.showToast(MyMeetingActivity.this, "Mymeeting");
-        Log.e("meet123", "meet2");
+//        FunctionAll functionAll = new FunctionAll();
+//        functionAll.showToast(MyMeetingActivity.this, "Mymeeting");
+//        Log.e("meet123", "meet2");
+        setTimeStart();
         mMeetingService = ZoomSDK.getInstance().getMeetingService();
         mInMeetingService = ZoomSDK.getInstance().getInMeetingService();
         if (mMeetingService == null || mInMeetingService == null) {
@@ -257,6 +288,200 @@ public class MyMeetingActivity extends FragmentActivity implements View.OnClickL
         mBtnRequestHelp.setOnClickListener(this);
 
         refreshToolbar();
+        initUI();
+    }
+
+    private void initUI() {
+        audioNormalBtn = findViewById(R.id.audio_normalBtn);
+        audioDiscusstionBtn = findViewById(R.id.audio_discusstionBtn);
+        audioPatientBtn = findViewById(R.id.audio_patientBtn);
+        powerUnitBtn = findViewById(R.id.power_unitBtn);
+        powerUnitBtn.setVisibility(View.GONE);
+        meetingAudioHelper.switchAudio();
+        if (loadSharedPreferencePatient().equals("true")) {
+            audioNormalBtn.setVisibility(View.GONE);
+            audioDiscusstionBtn.setVisibility(View.GONE);
+            audioPatientBtn.setVisibility(View.GONE);
+            powerUnitBtn.setVisibility(View.GONE);
+        }
+        audioNormalBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendMqtt("/Android/Audio", "normal");
+
+            }
+        });
+        audioDiscusstionBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendMqtt("/Android/Audio", "discussion");
+
+            }
+        });
+        audioPatientBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendMqtt("/Android/Audio", "patient");
+            }
+        });
+        powerUnitBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                sendMqtt("/MP1_0000001/PowerUnit/cmd", "from androidBtn PowerUnit");
+            }
+        });
+        String clientId = MqttClient.generateClientId();
+//        clientId = "xxxxtest";
+        topic = "/Android/Audio";
+        client = new MqttAndroidClient(this.getApplicationContext(), "tcp://35.213.188.10:1883", clientId);
+        connectMqtt();
+
+    }
+
+    public void connectMqtt() {
+        try {
+            MqttConnectOptions options = new MqttConnectOptions();
+            options.setMqttVersion(MqttConnectOptions.MQTT_VERSION_3_1);
+            options.setUserName("mixmix");
+            options.setPassword("c0vid1999".toCharArray());
+            IMqttToken token = client.connect(options);
+//            IMqttToken token = client.connect();
+
+            token.setActionCallback(new IMqttActionListener() {
+                @Override
+                public void onSuccess(IMqttToken asyncActionToken) {
+                    // We are connected
+                    Log.d("MQTT", " mqtt connect onSuccess");
+                    subMqtt();
+                }
+
+                @Override
+                public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
+                    // Something went wrong e.g. connection timeout or firewall problems
+                    Log.d("MQTT", "mqtt connect onFailure");
+
+                }
+            });
+        } catch (MqttException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void subMqtt() {
+        try {
+            client.subscribe(topic, 0);
+            client.setCallback(new MqttCallback() {
+                @Override
+                public void connectionLost(Throwable cause) {
+                    Log.i("MQTT", cause.getMessage());
+                }
+
+                @Override
+                public void messageArrived(String topic, MqttMessage message) throws Exception {
+                    Log.d("MQTT", "topic:" + topic);
+                    String msg = new String(message.getPayload());
+                    Log.d("MQTT", "message:" + msg);
+                    if (loadSharedPreferencePatient().equals("true")){
+                        if (msg.equals("discussion")){
+                            callBack.onClickDisconnectAudio();
+                        }
+                        else if(msg.equals("patient")){
+                            callBack.onClickAudio();
+                        }
+                    }else{
+                        callBack.onClickAudio();
+                        if(msg.equals("patient")){
+                            callBack.onClickDisconnectAudio();
+                        }
+                    }
+
+//                    meetingAudioHelper.disconnectAudio();
+                }
+
+                @Override
+                public void deliveryComplete(IMqttDeliveryToken token) {
+
+                }
+            });
+        } catch (MqttException e) {
+            Log.e("MQTT", e.getMessage());
+        }
+    }
+
+    public void sendMqtt(String topic, String msg) {
+        Api api;
+        api = retrofit.create(Api.class);
+        Call<String> call = api.sendMqtt(topic, msg);
+        call.enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(Call<String> call, Response<String> response) {
+                if (response.isSuccessful()) {
+                    System.out.println("send mqtt ok ");
+                    Log.i(TAG, "send mqtt ok ");
+                } else {
+                    Log.i(TAG, "send mqtt not ok ");
+                    System.out.println("send mqtt not ok ");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<String> call, Throwable t) {
+                System.out.println("MQTTERROR: " + t.getMessage());
+                Log.e(TAG, "MQTT ERROR:" + t.getMessage());
+            }
+        });
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private void setTimeStart() {
+        LocalTime myObj = LocalTime.now();
+        System.out.println(myObj);
+//        LocalTime time =   myObj.plusHours(7);
+//        System.out.println(time);
+
+        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("HH:mm");
+        String formattedDate = myObj.format(myFormatObj);
+        timeStart = formattedDate;
+        System.out.println("After formatting: " + formattedDate);
+    }
+
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    private String setTimeEnd() {
+        LocalTime myObj = LocalTime.now();
+        System.out.println(myObj);
+//        LocalTime time =   myObj.plusHours(7);
+//        System.out.println(time);
+
+        DateTimeFormatter myFormatObj = DateTimeFormatter.ofPattern("HH:mm");
+        String formattedDate = myObj.format(myFormatObj);
+        timeEnd = formattedDate;
+        System.out.println("After formatting: " + formattedDate);
+        return formattedDate;
+    }
+
+
+    private void sendMinuteOfMeet(String timeStop) {
+
+        Api api;
+        api = retrofit.create(Api.class);
+
+        System.out.println("meetingNum:" + meetingNumberText);
+        Call<String> call = api.sendMinute(meetingNumberText, timeStart, timeStop);
+        call.enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(Call<String> call, Response<String> response) {
+                if (response.isSuccessful()) {
+                    System.out.println("save minute success");
+                } else {
+                    System.out.println("can't save " + response.code());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<String> call, Throwable t) {
+                System.out.println("failed :" + t.getMessage());
+            }
+        });
     }
 
     @Override
@@ -390,7 +615,11 @@ public class MyMeetingActivity extends FragmentActivity implements View.OnClickL
         if (mMeetingService.getMeetingStatus() == MeetingStatus.MEETING_STATUS_INMEETING) {
             mConnectingText.setVisibility(View.GONE);
             meetingOptionBar.updateMeetingNumber(mInMeetingService.getCurrentMeetingNumber() + "");
+            meetingNumberText = String.valueOf(mInMeetingService.getCurrentMeetingNumber());
+            System.out.println("meetingNUMBER:" + mInMeetingService.getCurrentMeetingNumber());
+            System.out.println(mInMeetingService.getInMeetingUserList());
             meetingOptionBar.updateMeetingPassword(mInMeetingService.getMeetingPassword());
+            meetingOptionBar.getDrawingTime();
             meetingOptionBar.refreshToolbar();
         } else {
             if (mMeetingService.getMeetingStatus() == MeetingStatus.MEETING_STATUS_CONNECTING) {
@@ -1212,23 +1441,32 @@ public class MyMeetingActivity extends FragmentActivity implements View.OnClickL
         showJoinFailDialog(errorCode);
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onMeetingLeaveComplete(long ret) {
         meetingShareHelper.stopShare();
 
         if (!mMeetingFailed)
             System.out.println("leave complete");
-            SharedPreferences sharedPreferences = getSharedPreferences("FROM", 0);
-            SharedPreferences.Editor editor = sharedPreferences.edit();
-            editor.putString("from", "leave");
-            editor.commit();
-            endMeeting();
-            finish();
-            System.out.println("leave1112");
+        SharedPreferences sharedPreferences = getSharedPreferences("FROM", 0);
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("from", "leave");
+        editor.commit();
+        endMeeting();
+        String timeStop = setTimeEnd();
+        sendMinuteOfMeet(timeStop);
+        finish();
+        System.out.println("leave1112");
 
     }
 
-    public  void endMeeting(){
+    public String loadSharedPreferencePatient() {
+        SharedPreferences sharedPreferences = getSharedPreferences("PATIENT", 0);
+        String from = sharedPreferences.getString("patient", "");
+        return from;
+    }
+
+    public void endMeeting() {
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl("https://zoom.ksta.co/api/")
                 .addConverterFactory(GsonConverterFactory.create())
@@ -1239,10 +1477,9 @@ public class MyMeetingActivity extends FragmentActivity implements View.OnClickL
         call.enqueue(new Callback<String>() {
             @Override
             public void onResponse(Call<String> call, Response<String> response) {
-                if(response.isSuccessful()){
+                if (response.isSuccessful()) {
                     System.out.println("end MQTT success");
-                }
-                else {
+                } else {
                     System.out.println("end MQTT unsuccess");
                 }
             }
@@ -1253,6 +1490,7 @@ public class MyMeetingActivity extends FragmentActivity implements View.OnClickL
             }
         });
     }
+
     @Override
     public void onMeetingStatusChanged(MeetingStatus meetingStatus, int errorCode, int internalErrorCode) {
         checkShowVideoLayout(true);

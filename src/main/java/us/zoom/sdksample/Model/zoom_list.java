@@ -7,6 +7,30 @@ public class zoom_list {
     String topic;
     String agenda;
     String url;
+    int user_id ;
+    String meeting_id;
+    String meeting_password;
+    String start_time;
+    String end_time;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    String date;
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
+    }
+
 
     public int getId() {
         return id;
@@ -80,17 +104,11 @@ public class zoom_list {
         this.end_time = end_time;
     }
 
-    String meeting_id;
-
-
-
-    String meeting_password;
-    String start_time;
-    String end_time;
-    public zoom_list(String device_id, String topic, String url, String meeting_id, String meeting_password) {
+    public zoom_list(String device_id,int user_id, String topic, String url, String meeting_id, String meeting_password) {
         this.device_id = device_id;
         this.topic = topic;
         this.url = url;
+        this.user_id = user_id;
         this.meeting_id = meeting_id;
         this.meeting_password = meeting_password;
 

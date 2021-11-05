@@ -17,7 +17,8 @@
         android:id="@+id/text_connecting"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Connect79948654"
+        android:text="Connecting"
+        android:layout_gravity="center"
         android:textColor="@color/zm_white"
         android:textSize="16sp" />
 
